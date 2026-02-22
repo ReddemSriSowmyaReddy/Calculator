@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:controller="com.example.calculator.HelloController"
+          xmlns:fx="http://javafx.com/fxml"
+          hgap="5" vgap="5"
+          alignment="center">
+
+    <TextField fx:id="display"
+               GridPane.columnSpan="4"
+               editable="false"
+               prefHeight="40"/>
+
+    <!-- Row 1 -->
+    <Button text="7" onAction="#handleNumber" GridPane.rowIndex="1"/>
+    <Button text="8" onAction="#handleNumber" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Button text="9" onAction="#handleNumber" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+    <Button text="/" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+
+    <!-- Row 2 -->
+    <Button text="4" onAction="#handleNumber" GridPane.rowIndex="2"/>
+    <Button text="5" onAction="#handleNumber" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Button text="6" onAction="#handleNumber" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+    <Button text="*" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+
+    <!-- Row 3 -->
+    <Button text="1" onAction="#handleNumber" GridPane.rowIndex="3"/>
+    <Button text="2" onAction="#handleNumber" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Button text="3" onAction="#handleNumber" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+    <Button text="-" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+
+    <!-- Row 4 -->
+    <Button text="0" onAction="#handleNumber" GridPane.rowIndex="4"/>
+    <Button text="C" onAction="#handleClear" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Button text="=" onAction="#handleEquals" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+    <Button text="+" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="4"/>
+
+</GridPane>
